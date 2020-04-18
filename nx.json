@@ -1,0 +1,30 @@
+{
+  "npmScope": "enterprise",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "initiative-management": {
+      "tags": []
+    },
+    "initiative-management-e2e": {
+      "tags": [],
+      "implicitDependencies": ["initiative-management"]
+    }
+  }
+}
