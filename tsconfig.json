@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@enterprise/design-system": ["libs/design-system/src/index.ts"],
+      "@enterprise/domain-types": ["libs/domain-types/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

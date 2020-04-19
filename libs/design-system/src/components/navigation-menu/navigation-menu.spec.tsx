@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import App from './app';
+import { NavigationMenu } from './navigation-menu';
 
-describe('App', () => {
+describe(' NavigationMenu', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-
+    const { baseElement } = render(<NavigationMenu>Navigate</NavigationMenu>);
     expect(baseElement).toBeTruthy();
   });
 });

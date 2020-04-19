@@ -112,6 +112,117 @@
           }
         }
       }
+    },
+    "design-system": {
+      "root": "libs/design-system",
+      "sourceRoot": "libs/design-system/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/design-system/.eslintrc",
+            "tsConfig": [
+              "libs/design-system/tsconfig.lib.json",
+              "libs/design-system/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/design-system/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/design-system/jest.config.js",
+            "tsConfig": "libs/design-system/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/design-system/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "outputPath": "dist/storybook/design-system",
+            "config": {
+              "configFolder": "libs/design-system/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      }
+    },
+    "design-system-e2e": {
+      "root": "apps/design-system-e2e",
+      "sourceRoot": "apps/design-system-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/design-system-e2e/cypress.json",
+            "tsConfig": "apps/design-system-e2e/tsconfig.e2e.json",
+            "devServerTarget": "design-system:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "design-system:storybook:ci"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/design-system-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/design-system-e2e/**"]
+          }
+        }
+      }
+    },
+    "domain-types": {
+      "root": "libs/domain-types",
+      "sourceRoot": "libs/domain-types/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/domain-types/tsconfig.lib.json",
+              "libs/domain-types/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/domain-types/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/domain-types/jest.config.js",
+            "tsConfig": "libs/domain-types/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

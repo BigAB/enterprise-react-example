@@ -1,69 +1,40 @@
-# Enterprise
+# 🏢 Enterprise Scale React App
 
-This project was generated using [Nx](https://nx.dev).
+This project was generated using [Nx](https://nx.dev) a set of Extensible Dev Tools for Monorepos.
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+This is an example repo for the ideas from the talk [How to Build Large Scale React apps](https://slides.com/bigab/how-to-build-large-scale-react-apps) by [Adam L Barrett](https://twitter.com/adamlbarrett). It is obviously **not** large scale or enterprise, but I hope it helps convey the idea of where the boundaries and contracts can lay in the simple architecture to allow multiple teams to work on the app concurrently with fewer problems.
 
-🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+## Development
 
-## Adding capabilities to your workspace
+### Dev Server
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+Run `nx serve initiative-management` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+## Build
 
-Below are some plugins which you can add to your workspace:
-
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
-
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
+Run `nx build initiative-management` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Generate a library
 
 Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are sharable across libraries and applications. They can be imported from `@enterprise/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Libraries are sharable across libraries and applications. They can be imported from `@enterprise/my-lib`.
 
 ## Code scaffolding
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+Run `nx g @nrwl/react:component my-component --project=initiative-management` to generate a new Domain Component.
 
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `nx g @nrwl/react:component design-system --project=design-system` to generate a new UI Component.
 
 ## Running unit tests
 
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+Run `nx test my-project` to execute the unit tests via [Jest](https://jestjs.io).
 
 Run `nx affected:test` to execute the unit tests affected by a change.
 
 ## Running end-to-end tests
 
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+Run `ng e2e initiative-management` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
 
 Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 

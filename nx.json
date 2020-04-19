@@ -14,7 +14,13 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
@@ -25,6 +31,16 @@
     "initiative-management-e2e": {
       "tags": [],
       "implicitDependencies": ["initiative-management"]
+    },
+    "design-system": {
+      "tags": ["type:ui"]
+    },
+    "design-system-e2e": {
+      "tags": [],
+      "implicitDependencies": ["design-system"]
+    },
+    "domain-types": {
+      "tags": ["type:util"]
     }
   }
 }
