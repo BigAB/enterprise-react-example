@@ -26,7 +26,7 @@
       "@enterprise/store/people": ["libs/store/people/src/index.ts"],
       "@enterprise/store/projects": ["libs/store/projects/src/index.ts"],
       "@enterprise/store/tasks": ["libs/store/tasks/src/index.ts"],
-      "@enterprise/store/core": ["libs/store/core/src/index.ts"]
+      "@enterprise/store": ["libs/store/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

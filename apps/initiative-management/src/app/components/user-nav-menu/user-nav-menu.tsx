@@ -6,6 +6,7 @@ import {
 } from '@enterprise/design-system';
 import { UserAccount } from '@enterprise/domain-types';
 import { useDispatch, useSelector } from 'react-redux';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { projectsActions, projectsSelectors } from '@enterprise/store/projects';
 
 interface UserNavMenuProps {
