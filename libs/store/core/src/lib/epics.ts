@@ -1,5 +1,5 @@
 import { combineEpics, Epic } from 'redux-observable';
-import { projectsEpic } from '@enterprise/shared';
+import { projectsEpic } from '@enterprise/store/projects';
 import { catchError } from 'rxjs/operators';
 
 const epics: Epic[] = [projectsEpic];

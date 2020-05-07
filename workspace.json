@@ -68,10 +68,7 @@
               "apps/initiative-management/tsconfig.app.json",
               "apps/initiative-management/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/initiative-management/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/initiative-management/**"]
           }
         },
         "test": {
@@ -107,9 +104,7 @@
           "options": {
             "linter": "eslint",
             "config": "apps/initiative-management-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/initiative-management-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/initiative-management-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/initiative-management-e2e/**"
@@ -133,10 +128,7 @@
               "libs/design-system/tsconfig.lib.json",
               "libs/design-system/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/design-system/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/design-system/**"]
           }
         },
         "test": {
@@ -200,13 +192,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/design-system-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/design-system-e2e/**"
-            ]
+            "tsConfig": ["apps/design-system-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/design-system-e2e/**"]
           }
         }
       }
@@ -224,10 +211,7 @@
               "libs/domain-types/tsconfig.lib.json",
               "libs/domain-types/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/domain-types/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/domain-types/**"]
           }
         },
         "test": {
@@ -235,37 +219,6 @@
           "options": {
             "jestConfig": "libs/domain-types/jest.config.js",
             "tsConfig": "libs/domain-types/tsconfig.spec.json",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "shared": {
-      "root": "libs/shared",
-      "sourceRoot": "libs/shared/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "libs/shared/.eslintrc",
-            "tsConfig": [
-              "libs/shared/tsconfig.lib.json",
-              "libs/shared/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/shared/jest.config.js",
-            "tsConfig": "libs/shared/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }
@@ -286,10 +239,7 @@
               "libs/services/projects/tsconfig.lib.json",
               "libs/services/projects/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/services/projects/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/services/projects/**"]
           }
         },
         "test": {
@@ -317,10 +267,7 @@
               "libs/services/tasks/tsconfig.lib.json",
               "libs/services/tasks/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/services/tasks/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/services/tasks/**"]
           }
         },
         "test": {
@@ -348,10 +295,7 @@
               "libs/services/people/tsconfig.lib.json",
               "libs/services/people/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/services/people/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/services/people/**"]
           }
         },
         "test": {
@@ -379,10 +323,7 @@
               "libs/services/accounts/tsconfig.lib.json",
               "libs/services/accounts/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/services/accounts/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/services/accounts/**"]
           }
         },
         "test": {
@@ -462,10 +403,7 @@
               "apps/training-initiative/tsconfig.app.json",
               "apps/training-initiative/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/training-initiative/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/training-initiative/**"]
           }
         },
         "test": {
@@ -501,9 +439,7 @@
           "options": {
             "linter": "eslint",
             "config": "apps/training-initiative-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/training-initiative-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/training-initiative-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/training-initiative-e2e/**"
@@ -579,10 +515,7 @@
               "apps/outreach-initiative/tsconfig.app.json",
               "apps/outreach-initiative/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/outreach-initiative/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/outreach-initiative/**"]
           }
         },
         "test": {
@@ -618,9 +551,7 @@
           "options": {
             "linter": "eslint",
             "config": "apps/outreach-initiative-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/outreach-initiative-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/outreach-initiative-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/outreach-initiative-e2e/**"
@@ -696,10 +627,7 @@
               "apps/tools-initiative/tsconfig.app.json",
               "apps/tools-initiative/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/tools-initiative/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/tools-initiative/**"]
           }
         },
         "test": {
@@ -735,13 +663,8 @@
           "options": {
             "linter": "eslint",
             "config": "apps/tools-initiative-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/tools-initiative-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/tools-initiative-e2e/**"
-            ]
+            "tsConfig": ["apps/tools-initiative-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/tools-initiative-e2e/**"]
           }
         }
       }
@@ -761,10 +684,7 @@
               "libs/store/accounts/tsconfig.lib.json",
               "libs/store/accounts/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/store/accounts/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/store/accounts/**"]
           }
         },
         "test": {
@@ -792,10 +712,7 @@
               "libs/store/people/tsconfig.lib.json",
               "libs/store/people/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/store/people/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/store/people/**"]
           }
         },
         "test": {
@@ -823,10 +740,7 @@
               "libs/store/projects/tsconfig.lib.json",
               "libs/store/projects/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/store/projects/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/store/projects/**"]
           }
         },
         "test": {
@@ -854,10 +768,7 @@
               "libs/store/tasks/tsconfig.lib.json",
               "libs/store/tasks/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/store/tasks/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/store/tasks/**"]
           }
         },
         "test": {
@@ -885,10 +796,7 @@
               "libs/store/core/tsconfig.lib.json",
               "libs/store/core/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/store/core/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/store/core/**"]
           }
         },
         "test": {

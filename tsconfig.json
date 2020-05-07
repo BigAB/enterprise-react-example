@@ -10,57 +10,24 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@enterprise/design-system": [
-        "libs/design-system/src/index.ts"
-      ],
-      "@enterprise/domain-types": [
-        "libs/domain-types/src/index.ts"
-      ],
-      "@enterprise/shared": [
-        "libs/shared/src/index.ts"
-      ],
-      "@enterprise/services/projects": [
-        "libs/services/projects/src/index.ts"
-      ],
-      "@enterprise/services/tasks": [
-        "libs/services/tasks/src/index.ts"
-      ],
-      "@enterprise/services/people": [
-        "libs/services/people/src/index.ts"
-      ],
-      "@enterprise/services/accounts": [
-        "libs/services/accounts/src/index.ts"
-      ],
-      "@enterprise/store/accounts": [
-        "libs/store/accounts/src/index.ts"
-      ],
-      "@enterprise/store/people": [
-        "libs/store/people/src/index.ts"
-      ],
-      "@enterprise/store/projects": [
-        "libs/store/projects/src/index.ts"
-      ],
-      "@enterprise/store/tasks": [
-        "libs/store/tasks/src/index.ts"
-      ],
-      "@enterprise/store/core": [
-        "libs/store/core/src/index.ts"
-      ]
+      "@enterprise/design-system": ["libs/design-system/src/index.ts"],
+      "@enterprise/domain-types": ["libs/domain-types/src/index.ts"],
+      "@enterprise/services/projects": ["libs/services/projects/src/index.ts"],
+      "@enterprise/services/tasks": ["libs/services/tasks/src/index.ts"],
+      "@enterprise/services/people": ["libs/services/people/src/index.ts"],
+      "@enterprise/services/accounts": ["libs/services/accounts/src/index.ts"],
+      "@enterprise/store/accounts": ["libs/store/accounts/src/index.ts"],
+      "@enterprise/store/people": ["libs/store/people/src/index.ts"],
+      "@enterprise/store/projects": ["libs/store/projects/src/index.ts"],
+      "@enterprise/store/tasks": ["libs/store/tasks/src/index.ts"],
+      "@enterprise/store/core": ["libs/store/core/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

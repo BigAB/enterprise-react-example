@@ -6,7 +6,7 @@ import {
 } from '@enterprise/design-system';
 import { UserAccount } from '@enterprise/domain-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { projectsActions, projectsSelectors } from '@enterprise/shared';
+import { projectsActions, projectsSelectors } from '@enterprise/store/projects';
 
 interface UserNavMenuProps {
   userAccount?: UserAccount | null;
