@@ -17,7 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@enterprise/design-system": ["libs/design-system/src/index.ts"],
-      "@enterprise/domain-types": ["libs/domain-types/src/index.ts"]
+      "@enterprise/domain-types": ["libs/domain-types/src/index.ts"],
+      "@enterprise/store": ["libs/store/src/index.ts"],
+      "@enterprise/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

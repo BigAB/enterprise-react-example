@@ -1,19 +1,27 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { AccountCircle } from '@material-ui/icons';
 import {
   NavigationMenu,
-  NavigationMenuActions
+  NavigationMenuActions,
 } from '@enterprise/design-system';
-import { User } from '@enterprise/domain-types';
+import { UserAccount } from '@enterprise/domain-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { projectsActions, projectsSelectors } from '@enterprise/shared';
 
 interface UserNavMenuProps {
-  user?: User | null;
+  userAccount?: UserAccount | null;
 }
 
 export const UserNavMenu: FC<UserNavMenuProps> = ({
-  user
+  userAccount,
 }: UserNavMenuProps) => {
-  if (!user) {
+  const projects = useSelector(projectsSelectors.selectAll);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(projectsActions.projectsRequested());
+  }, [dispatch]);
+
+  if (!userAccount) {
     return null;
   }
   const actions: NavigationMenuActions[] = [
@@ -21,15 +29,15 @@ export const UserNavMenu: FC<UserNavMenuProps> = ({
       label: 'Profile',
       href: './profile',
       callback(ev) {
-        console.log('Profile', user);
-      }
+        // console.log('PROFILE', project1);
+      },
     },
     {
       label: 'Logout',
       callback() {
-        console.log('Logout', user);
-      }
-    }
+        console.log('projects', projects);
+      },
+    },
   ];
 
   return (

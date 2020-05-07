@@ -41,6 +41,12 @@
     },
     "domain-types": {
       "tags": ["type:util"]
+    },
+    "store": {
+      "tags": ["type:store"]
+    },
+    "shared": {
+      "tags": []
     }
   }
 }

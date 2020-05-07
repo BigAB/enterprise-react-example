@@ -6,7 +6,9 @@ export const App = () => {
   return (
     <>
       <AppBar heading="Initiative Manager">
-        <UserNavMenu user={{ name: 'Adam', id: '1' }} />
+        <UserNavMenu
+          userAccount={{ id: '1', user: { id: 'ab123', name: 'Adam' } }}
+        />
       </AppBar>
     </>
   );
