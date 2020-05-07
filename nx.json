@@ -89,6 +89,9 @@
     },
     "store-core": {
       "tags": ["store"]
+    },
+    "providers-projects": {
+      "tags": []
     }
   }
 }

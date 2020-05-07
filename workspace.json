@@ -808,6 +808,34 @@
           }
         }
       }
+    },
+    "providers-projects": {
+      "root": "libs/providers/projects",
+      "sourceRoot": "libs/providers/projects/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/providers/projects/.eslintrc",
+            "tsConfig": [
+              "libs/providers/projects/tsconfig.lib.json",
+              "libs/providers/projects/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/providers/projects/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/providers/projects/jest.config.js",
+            "tsConfig": "libs/providers/projects/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

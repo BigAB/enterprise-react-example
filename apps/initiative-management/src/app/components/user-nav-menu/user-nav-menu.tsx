@@ -1,13 +1,12 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { AccountCircle } from '@material-ui/icons';
 import {
   NavigationMenu,
   NavigationMenuActions,
 } from '@enterprise/design-system';
 import { UserAccount } from '@enterprise/domain-types';
-import { useDispatch, useSelector } from 'react-redux';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { projectsActions, projectsSelectors } from '@enterprise/store/projects';
+import { useProjects } from '@enterprise/providers/projects';
 
 interface UserNavMenuProps {
   userAccount?: UserAccount | null;
@@ -16,11 +15,7 @@ interface UserNavMenuProps {
 export const UserNavMenu: FC<UserNavMenuProps> = ({
   userAccount,
 }: UserNavMenuProps) => {
-  const projects = useSelector(projectsSelectors.selectAll);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(projectsActions.projectsRequested());
-  }, [dispatch]);
+  const [projects] = useProjects();
 
   if (!userAccount) {
     return null;
