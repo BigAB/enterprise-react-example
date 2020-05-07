@@ -746,9 +746,9 @@
         }
       }
     },
-    "redux": {
-      "root": "libs/redux",
-      "sourceRoot": "libs/redux/src",
+    "store-accounts": {
+      "root": "libs/store/accounts",
+      "sourceRoot": "libs/store/accounts/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -756,22 +756,146 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "eslint",
-            "config": "libs/redux/.eslintrc",
+            "config": "libs/store/accounts/.eslintrc",
             "tsConfig": [
-              "libs/redux/tsconfig.lib.json",
-              "libs/redux/tsconfig.spec.json"
+              "libs/store/accounts/tsconfig.lib.json",
+              "libs/store/accounts/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/redux/**"
+              "!libs/store/accounts/**"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/redux/jest.config.js",
-            "tsConfig": "libs/redux/tsconfig.spec.json",
+            "jestConfig": "libs/store/accounts/jest.config.js",
+            "tsConfig": "libs/store/accounts/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "store-people": {
+      "root": "libs/store/people",
+      "sourceRoot": "libs/store/people/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/store/people/.eslintrc",
+            "tsConfig": [
+              "libs/store/people/tsconfig.lib.json",
+              "libs/store/people/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/people/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/people/jest.config.js",
+            "tsConfig": "libs/store/people/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "store-projects": {
+      "root": "libs/store/projects",
+      "sourceRoot": "libs/store/projects/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/store/projects/.eslintrc",
+            "tsConfig": [
+              "libs/store/projects/tsconfig.lib.json",
+              "libs/store/projects/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/projects/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/projects/jest.config.js",
+            "tsConfig": "libs/store/projects/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "store-tasks": {
+      "root": "libs/store/tasks",
+      "sourceRoot": "libs/store/tasks/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/store/tasks/.eslintrc",
+            "tsConfig": [
+              "libs/store/tasks/tsconfig.lib.json",
+              "libs/store/tasks/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/tasks/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/tasks/jest.config.js",
+            "tsConfig": "libs/store/tasks/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "store-core": {
+      "root": "libs/store/core",
+      "sourceRoot": "libs/store/core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/store/core/.eslintrc",
+            "tsConfig": [
+              "libs/store/core/tsconfig.lib.json",
+              "libs/store/core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/core/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/core/jest.config.js",
+            "tsConfig": "libs/store/core/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }

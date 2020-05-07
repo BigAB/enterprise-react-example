@@ -42,8 +42,20 @@
       "@enterprise/services/accounts": [
         "libs/services/accounts/src/index.ts"
       ],
-      "@enterprise/redux": [
-        "libs/redux/src/index.ts"
+      "@enterprise/store/accounts": [
+        "libs/store/accounts/src/index.ts"
+      ],
+      "@enterprise/store/people": [
+        "libs/store/people/src/index.ts"
+      ],
+      "@enterprise/store/projects": [
+        "libs/store/projects/src/index.ts"
+      ],
+      "@enterprise/store/tasks": [
+        "libs/store/tasks/src/index.ts"
+      ],
+      "@enterprise/store/core": [
+        "libs/store/core/src/index.ts"
       ]
     }
   },

@@ -98,7 +98,27 @@
         "tools-initiative"
       ]
     },
-    "redux": {
+    "store-accounts": {
+      "tags": [
+        "store"
+      ]
+    },
+    "store-people": {
+      "tags": [
+        "store"
+      ]
+    },
+    "store-projects": {
+      "tags": [
+        "store"
+      ]
+    },
+    "store-tasks": {
+      "tags": [
+        "store"
+      ]
+    },
+    "store-core": {
       "tags": [
         "type:store"
       ]
