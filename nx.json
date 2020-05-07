@@ -47,6 +47,39 @@
     },
     "shared": {
       "tags": []
+    },
+    "services-projects": {
+      "tags": []
+    },
+    "services-tasks": {
+      "tags": []
+    },
+    "services-people": {
+      "tags": []
+    },
+    "services-accounts": {
+      "tags": []
+    },
+    "training-initiative": {
+      "tags": ["type:application initiative:training"]
+    },
+    "training-initiative-e2e": {
+      "tags": [],
+      "implicitDependencies": ["training-initiative"]
+    },
+    "outreach-initiative": {
+      "tags": ["type:application initiative:outreach"]
+    },
+    "outreach-initiative-e2e": {
+      "tags": [],
+      "implicitDependencies": ["outreach-initiative"]
+    },
+    "tools-initiative": {
+      "tags": ["type:application initiative:tools"]
+    },
+    "tools-initiative-e2e": {
+      "tags": [],
+      "implicitDependencies": ["tools-initiative"]
     }
   }
 }
