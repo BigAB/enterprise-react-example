@@ -1,3 +1,16 @@
+# \*\* JS VidCon Visitors \*\*
+
+<marquee>Announcement for JS VidCon Visitors</marquee>
+
+You are most likely here to see an example of the front-end architecture and monorepo discussed in Adam L Barrett's **How to build Large Scale React Apps** talk.
+
+I sincerely apologize, as this example is **not quite ready**. If you follow me on twitter at [@adamlbarrett](https://twitter.com/adamlbarrett) I will announce when this example repo is ready.
+
+Sorry for the inconvenience,  
+Adam L Barrett
+
+---
+
 # 🏢 Enterprise Scale React App
 
 This project was generated using [Nx](https://nx.dev) a set of Extensible Dev Tools for Monorepos.
