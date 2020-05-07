@@ -30,20 +30,25 @@
     },
     "initiative-management-e2e": {
       "tags": [],
-      "implicitDependencies": ["initiative-management"]
+      "implicitDependencies": [
+        "initiative-management"
+      ]
     },
     "design-system": {
-      "tags": ["type:ui"]
+      "tags": [
+        "type:ui"
+      ]
     },
     "design-system-e2e": {
       "tags": [],
-      "implicitDependencies": ["design-system"]
+      "implicitDependencies": [
+        "design-system"
+      ]
     },
     "domain-types": {
-      "tags": ["type:util"]
-    },
-    "store": {
-      "tags": ["type:store"]
+      "tags": [
+        "type:util"
+      ]
     },
     "shared": {
       "tags": []
@@ -61,25 +66,42 @@
       "tags": []
     },
     "training-initiative": {
-      "tags": ["type:application initiative:training"]
+      "tags": [
+        "type:application initiative:training"
+      ]
     },
     "training-initiative-e2e": {
       "tags": [],
-      "implicitDependencies": ["training-initiative"]
+      "implicitDependencies": [
+        "training-initiative"
+      ]
     },
     "outreach-initiative": {
-      "tags": ["type:application initiative:outreach"]
+      "tags": [
+        "type:application initiative:outreach"
+      ]
     },
     "outreach-initiative-e2e": {
       "tags": [],
-      "implicitDependencies": ["outreach-initiative"]
+      "implicitDependencies": [
+        "outreach-initiative"
+      ]
     },
     "tools-initiative": {
-      "tags": ["type:application initiative:tools"]
+      "tags": [
+        "type:application initiative:tools"
+      ]
     },
     "tools-initiative-e2e": {
       "tags": [],
-      "implicitDependencies": ["tools-initiative"]
+      "implicitDependencies": [
+        "tools-initiative"
+      ]
+    },
+    "redux": {
+      "tags": [
+        "type:store"
+      ]
     }
   }
 }
