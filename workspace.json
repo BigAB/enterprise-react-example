@@ -485,37 +485,18 @@
             "jestConfig": "apps/outreach-initiative/jest.config.js",
             "passWithNoTests": true
           }
-        }
-      }
-    },
-    "outreach-initiative-e2e": {
-      "root": "apps/outreach-initiative-e2e",
-      "sourceRoot": "apps/outreach-initiative-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/outreach-initiative-e2e/cypress.json",
-            "tsConfig": "apps/outreach-initiative-e2e/tsconfig.e2e.json",
+            "cypressConfig": "apps/outreach-initiative/e2e/cypress.json",
+            "tsConfig": "apps/outreach-initiative/e2e/tsconfig.e2e.json",
             "devServerTarget": "outreach-initiative:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "outreach-initiative:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "apps/outreach-initiative-e2e/.eslintrc",
-            "tsConfig": ["apps/outreach-initiative-e2e/tsconfig.e2e.json"],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/outreach-initiative-e2e/**"
-            ]
           }
         }
       }
