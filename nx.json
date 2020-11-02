@@ -59,10 +59,6 @@
     "tools-initiative": {
       "tags": ["type:application initiative:tools"]
     },
-    "tools-initiative-e2e": {
-      "tags": [],
-      "implicitDependencies": ["tools-initiative"]
-    },
     "store-accounts": {
       "tags": ["store"]
     },
