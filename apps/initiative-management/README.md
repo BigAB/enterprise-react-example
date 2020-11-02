@@ -1,3 +1,8 @@
+
+# Initiative Management Software
+
+🏢 Enterprise Corp™
+
 ## The problem
 
 Enterprise Corp is not attracting enough React consulting opportunities. Enterprise Corp has been doing React consulting, but we have no way of distinguishing ourselves from our competitors.
