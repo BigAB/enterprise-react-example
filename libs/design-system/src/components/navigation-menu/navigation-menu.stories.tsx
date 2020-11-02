@@ -5,21 +5,21 @@ import { NavigationMenu, NavigationMenuActions } from './navigation-menu';
 
 export default { title: 'NavigationMenu' };
 
-export const primary = () => {
+export const primary = (): JSX.Element => {
   const actions: NavigationMenuActions[] = [
     {
       label: 'Profile',
       href: './profile',
       callback(ev) {
         console.log('Profile');
-      }
+      },
     },
     {
       label: 'Logout',
       callback() {
         console.log('Logout');
-      }
-    }
+      },
+    },
   ];
   const actionKnob = object('Actions', actions);
   return (

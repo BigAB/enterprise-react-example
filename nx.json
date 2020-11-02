@@ -35,10 +35,6 @@
     "design-system": {
       "tags": ["type:ui"]
     },
-    "design-system-e2e": {
-      "tags": [],
-      "implicitDependencies": ["design-system"]
-    },
     "domain-types": {
       "tags": ["type:util"]
     },

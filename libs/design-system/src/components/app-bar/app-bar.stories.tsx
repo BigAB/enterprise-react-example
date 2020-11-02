@@ -12,17 +12,17 @@ const actions = [
     href: './cart',
     callback() {
       console.log('Navigate to cart page');
-    }
+    },
   },
   {
     label: 'Preferences',
     callback() {
       console.log('Open Preferences');
-    }
-  }
+    },
+  },
 ];
 
-export const primary = () => (
+export const primary = (): JSX.Element => (
   <AppBar heading={text('Heading', 'Initiative Manager')}>
     <NavigationMenu actions={actions}>
       <AccountCircle />
