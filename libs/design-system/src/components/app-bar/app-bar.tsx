@@ -2,15 +2,15 @@ import React, { ReactNode } from 'react';
 import {
   AppBar as MaterialAppBar,
   Toolbar,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     title: {
-      flexGrow: 1
-    }
+      flexGrow: 1,
+    },
   })
 );
 
@@ -19,7 +19,7 @@ export interface AppBarProps {
   children?: ReactNode;
 }
 
-export const AppBar = ({ heading, children }: AppBarProps) => {
+export const AppBar = ({ heading, children }: AppBarProps): JSX.Element => {
   const { title } = useStyles();
 
   return (

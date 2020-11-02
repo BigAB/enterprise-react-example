@@ -77,37 +77,18 @@
             "jestConfig": "apps/initiative-management/jest.config.js",
             "passWithNoTests": true
           }
-        }
-      }
-    },
-    "initiative-management-e2e": {
-      "root": "apps/initiative-management-e2e",
-      "sourceRoot": "apps/initiative-management-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/initiative-management-e2e/cypress.json",
-            "tsConfig": "apps/initiative-management-e2e/tsconfig.e2e.json",
+            "cypressConfig": "apps/initiative-management/e2e/cypress.json",
+            "tsConfig": "apps/initiative-management/tsconfig.e2e.json",
             "devServerTarget": "initiative-management:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "initiative-management:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "apps/initiative-management-e2e/.eslintrc",
-            "tsConfig": ["apps/initiative-management-e2e/tsconfig.e2e.json"],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/initiative-management-e2e/**"
-            ]
           }
         }
       }
@@ -167,32 +148,19 @@
               "quiet": true
             }
           }
-        }
-      }
-    },
-    "design-system-e2e": {
-      "root": "apps/design-system-e2e",
-      "sourceRoot": "apps/design-system-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/design-system-e2e/cypress.json",
-            "tsConfig": "apps/design-system-e2e/tsconfig.e2e.json",
-            "devServerTarget": "design-system:storybook"
+            "cypressConfig": "libs/design-system/e2e/cypress.json",
+            "tsConfig": "libs/design-system/tsconfig.e2e.json",
+            "devServerTarget": "design-system:storybook",
+            "video": false
           },
           "configurations": {
             "ci": {
               "devServerTarget": "design-system:storybook:ci"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["apps/design-system-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/design-system-e2e/**"]
           }
         }
       }
@@ -406,37 +374,18 @@
             "jestConfig": "apps/training-initiative/jest.config.js",
             "passWithNoTests": true
           }
-        }
-      }
-    },
-    "training-initiative-e2e": {
-      "root": "apps/training-initiative-e2e",
-      "sourceRoot": "apps/training-initiative-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/training-initiative-e2e/cypress.json",
-            "tsConfig": "apps/training-initiative-e2e/tsconfig.e2e.json",
+            "cypressConfig": "apps/training-initiative/e2e/cypress.json",
+            "tsConfig": "apps/training-initiative/tsconfig.e2e.json",
             "devServerTarget": "training-initiative:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "training-initiative:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "apps/training-initiative-e2e/.eslintrc",
-            "tsConfig": ["apps/training-initiative-e2e/tsconfig.e2e.json"],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/training-initiative-e2e/**"
-            ]
           }
         }
       }
@@ -517,37 +466,18 @@
             "jestConfig": "apps/outreach-initiative/jest.config.js",
             "passWithNoTests": true
           }
-        }
-      }
-    },
-    "outreach-initiative-e2e": {
-      "root": "apps/outreach-initiative-e2e",
-      "sourceRoot": "apps/outreach-initiative-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/outreach-initiative-e2e/cypress.json",
-            "tsConfig": "apps/outreach-initiative-e2e/tsconfig.e2e.json",
+            "cypressConfig": "apps/outreach-initiative/e2e/cypress.json",
+            "tsConfig": "apps/outreach-initiative/e2e/tsconfig.e2e.json",
             "devServerTarget": "outreach-initiative:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "outreach-initiative:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "apps/outreach-initiative-e2e/.eslintrc",
-            "tsConfig": ["apps/outreach-initiative-e2e/tsconfig.e2e.json"],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/outreach-initiative-e2e/**"
-            ]
           }
         }
       }
@@ -628,34 +558,18 @@
             "jestConfig": "apps/tools-initiative/jest.config.js",
             "passWithNoTests": true
           }
-        }
-      }
-    },
-    "tools-initiative-e2e": {
-      "root": "apps/tools-initiative-e2e",
-      "sourceRoot": "apps/tools-initiative-e2e/src",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/tools-initiative-e2e/cypress.json",
-            "tsConfig": "apps/tools-initiative-e2e/tsconfig.e2e.json",
+            "cypressConfig": "apps/tools-initiative/e2e/cypress.json",
+            "tsConfig": "apps/tools-initiative/tsconfig.e2e.json",
             "devServerTarget": "tools-initiative:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "tools-initiative:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "eslint",
-            "config": "apps/tools-initiative-e2e/.eslintrc",
-            "tsConfig": ["apps/tools-initiative-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/tools-initiative-e2e/**"]
           }
         }
       }
@@ -871,11 +785,6 @@
     },
     "@nrwl/nx-plugin": {
       "plugin": {
-        "linter": "eslint"
-      }
-    },
-    "@nrwl/nest": {
-      "application": {
         "linter": "eslint"
       }
     },

@@ -16,7 +16,7 @@ export interface NavigationMenuProps {
 }
 
 const Anchor = styled.a.attrs({
-  rel: 'noreferrer noopener'
+  rel: 'noreferrer noopener',
 })`
   color: inherit;
   text-decoration: inherit;
@@ -26,8 +26,8 @@ export const NavigationMenu = ({
   actions = [],
   ariaLabel,
   ariaId,
-  children
-}: NavigationMenuProps) => {
+  children,
+}: NavigationMenuProps): JSX.Element => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -81,10 +81,10 @@ export const NavigationMenu = ({
         open={open}
         onClose={(event: React.MouseEvent<HTMLElement>) => handleClose(event)}
       >
-        {actions.map(action => (
+        {actions.map((action) => (
           <MenuItem
             key={action.label}
-            onClick={event => handleClose(event, action)}
+            onClick={(event) => handleClose(event, action)}
           >
             {action.href ? (
               <Anchor href={action.href}>{action.label}</Anchor>

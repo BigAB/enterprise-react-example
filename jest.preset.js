@@ -8,4 +8,5 @@ module.exports = {
   resolver: '@nrwl/jest/plugins/resolver',
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageReporters: ['html'],
+  testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
 };

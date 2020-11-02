@@ -1,0 +1,12 @@
+{
+  "fileServerFolder": ".",
+  "fixturesFolder": "./fixtures",
+  "integrationFolder": "./integration",
+  "modifyObstructiveCode": false,
+  "pluginsFile": "./plugins/index",
+  "supportFile": "./support/index.ts",
+  "video": true,
+  "videosFolder": "../../../dist/cypress/apps/outreach-initiative/e2e/videos",
+  "screenshotsFolder": "../../../dist/cypress/apps/outreach-initiative/e2e/screenshots",
+  "chromeWebSecurity": false
+}
