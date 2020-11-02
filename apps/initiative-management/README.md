@@ -59,7 +59,7 @@ We will speak or run workshops at conferences, speak as guests on podcasts or an
 
 We will engage in traditional digital marketing methods such as increasing the SEO value of our React Services landing page, engage in influencer marketing and social media, campaign marketing or any other Brand Awareness tasks that will help establish us as experts and remove any friction from turning prospects into QSLs. `(Marketing)`
 
-We will maintain an Enterprise Corp community Slack channel and/or forum, where we will track and engage with community members. We wll assist community members with the use of our tools, gather feedback aboutor projects, promote and celebrate communiity members contributons and look for high quality members which could be recruited on to the Enterprise Corp team. `(Community)`
+We will maintain an Enterprise Corp community Discord channel and/or forum, where we will track and engage with community members. We wll assist community members with the use of our tools, gather feedback about our projects, promote and celebrate community member's contributions and look for high quality members which could be recruited to the Enterprise Corp team. `(Community)`
 
 We will try and leverage satisfied clients to create testimonials and endorsements to be used in our marketing material. `(Marketing)`
 
