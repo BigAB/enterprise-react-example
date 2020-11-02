@@ -6,8 +6,8 @@
   "pluginsFile": "./plugins/index",
   "supportFile": "./support/index.ts",
   "video": false,
-  "videosFolder": "../../../dist/cypress/apps/design-system/e2e/videos",
-  "screenshotsFolder": "../../../dist/cypress/apps/design-system/e2e/screenshots",
+  "videosFolder": "../../../dist/cypress/libs/design-system/e2e/videos",
+  "screenshotsFolder": "../../../dist/cypress/libs/design-system/e2e/screenshots",
   "chromeWebSecurity": false,
   "baseUrl": "http://localhost:4400"
 }
