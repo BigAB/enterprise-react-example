@@ -25,7 +25,8 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "storybook": "nx storybook design-system"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.13",
