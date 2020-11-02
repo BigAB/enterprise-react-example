@@ -5,7 +5,7 @@
   "modifyObstructiveCode": false,
   "pluginsFile": "./plugins/index",
   "supportFile": "./support/index.ts",
-  "video": true,
+  "video": false,
   "videosFolder": "../../../dist/cypress/apps/design-system/e2e/videos",
   "screenshotsFolder": "../../../dist/cypress/apps/design-system/e2e/screenshots",
   "chromeWebSecurity": false,

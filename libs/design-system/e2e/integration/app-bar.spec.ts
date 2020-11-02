@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 describe('design-system: AppBar component', () => {
   beforeEach(() => cy.visit('/iframe.html?id=appbar--primary'));
 

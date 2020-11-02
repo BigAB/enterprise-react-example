@@ -28,10 +28,6 @@
     "initiative-management": {
       "tags": []
     },
-    "initiative-management-e2e": {
-      "tags": [],
-      "implicitDependencies": ["initiative-management"]
-    },
     "design-system": {
       "tags": ["type:ui"]
     },
