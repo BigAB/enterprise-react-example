@@ -54,7 +54,7 @@
     "@nrwl/react": "15.2.1",
     "@nrwl/storybook": "16.9.1",
     "@nrwl/web": "15.2.1",
-    "@nrwl/workspace": "10.4.15",
+    "@nrwl/workspace": "17.1.1",
     "@storybook/addon-knobs": "^6.0.28",
     "@storybook/react": "^7.5.2",
     "@testing-library/react": "^11.1.0",
