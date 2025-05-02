@@ -56,7 +56,7 @@
     "@nrwl/web": "15.2.1",
     "@nrwl/workspace": "17.1.1",
     "@storybook/addon-knobs": "^6.0.28",
-    "@storybook/react": "^7.5.2",
+    "@storybook/react": "^8.6.12",
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.6",
