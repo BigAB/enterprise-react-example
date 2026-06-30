@@ -51,7 +51,7 @@
     "@nrwl/cypress": "16.9.1",
     "@nrwl/eslint-plugin-nx": "10.3.2",
     "@nrwl/jest": "10.3.2",
-    "@nrwl/react": "15.2.1",
+    "@nrwl/react": "15.9.7",
     "@nrwl/storybook": "16.9.1",
     "@nrwl/web": "15.2.1",
     "@nrwl/workspace": "17.1.1",
