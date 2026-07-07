@@ -67,7 +67,7 @@
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "babel-loader": "8.1.0",
-    "commitizen": "^4.2.5",
+    "commitizen": "^4.3.2",
     "cypress": "^15.18.1",
     "dotenv": "8.2.0",
     "eslint": "^7.12.1",
